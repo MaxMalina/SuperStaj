@@ -16,5 +16,5 @@ function onRequest(request, response)
 	response.end();
 }
 
-http.createServer(onRequest).listen(5000);
+http.createServer(onRequest).listen(80);
 console.log('OK');
