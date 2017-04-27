@@ -9,12 +9,13 @@
 
 var http = require('http');
 
-function onRequest(request, response)
-{
+server.on('request'), function (request, response){
 	response.writeHead(200, {'Content-Type': 'text/plain'});
 	response.write('856912b5');
 	response.end();
 }
 
-http.createServer(onRequest).listen(80);
+var server = new http.Server();
+server.listen(8080);
+
 console.log('OK');
