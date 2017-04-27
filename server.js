@@ -9,13 +9,15 @@
 
 var http = require('http');
 
-server.on('request'), function (request, response){
+var server = new http.Server();
+server.listen(8080);
+
+
+server.on('request', function (request, response){
 	response.writeHead(200, {'Content-Type': 'text/plain'});
 	response.write('856912b5');
 	response.end();
-}
+});
 
-var server = new http.Server();
-server.listen(8080);
 
 console.log('OK');
