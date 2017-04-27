@@ -7,17 +7,26 @@
 //    response.end();
 //});
 
-var http = require('http');
+//var http = require('http');
 
-var server = new http.Server();
-server.listen(8080);
+//var server = new http.Server();
+//server.listen(8080);
 
 
-server.on('request', function (request, response){
-	response.writeHead(200, {'Content-Type': 'text/plain'});
-	response.write('856912b5');
-	response.end();
+//server.on('request', function (request, response){
+//	response.writeHead(200, {'Content-Type': 'text/plain'});
+//	response.write('856912b5');
+//	response.end();
+//});
+
+
+//console.log('OK');
+
+var express = require('express');
+var app = express();
+
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
-
-
-console.log('OK');
