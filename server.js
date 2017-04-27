@@ -25,7 +25,7 @@
 var express = require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT));
 
 app.listen(app.get('port'), function() {
 	response.writeHead(200, {'Content-Type': 'text/plain'});
