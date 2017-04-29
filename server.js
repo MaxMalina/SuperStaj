@@ -24,8 +24,8 @@
 
 var express = require("express");
 var app = express();
-var logger = require('morgan')
-app.use(logger);
+var logger = require('morgan');
+app.use(logger("default"));
 
 app.get('/', function(request, response) {
   response.send('Hello World!');
