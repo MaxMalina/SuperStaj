@@ -29,7 +29,7 @@ var logger = morgan('default');
 app.use(logger); //replaces your app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+  response.send('856912b5');
 });
 
 var port = process.env.PORT || 5000;
