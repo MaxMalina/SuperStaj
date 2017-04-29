@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Just test comething really cool",
   "engines": {
-    "node": "6.10.2"
+    "node": "6.10.1",
+    "npm": "3.10.10"
   },
   "main": "server.js",
   "scripts": {
